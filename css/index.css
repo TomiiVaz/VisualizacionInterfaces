@@ -1,0 +1,125 @@
+/* General */
+article{
+    margin: auto;
+    padding: 35px;
+}
+.btn{
+    background-color: #efec83;
+    border: none;
+    border-radius: 50px;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+}
+#row-2{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*******/
+
+/* Header */
+.container{
+    margin: 0;
+    padding: 0;
+}
+.fondoheader{
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    padding-right: 0%;
+}
+.header-nav{
+    margin-left: auto; 
+    margin-right: auto;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    padding-left: 80%;
+    padding-top: 1%;
+}
+.registrarse{
+    padding-left: 55%;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+/**********/
+
+/* Imagen Promocional 1 */
+#art-img-1{
+    padding: 5%;
+    margin-left: 10%;
+}
+#img-prom-1{
+    width: 70%;
+}
+/*******/
+
+/* Texto de Bienvenidos */
+#art-bienvenidos{
+    background-color: #5f6bb3;
+    padding-inline: 35px;
+    margin-top: 50px;
+    margin-right: 25px;
+    width: 30%;
+    height: 78%;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+#bienvenidos-parrafo{
+    line-height: 45px;    
+}
+/*******/
+
+/* Texto promocion de seminario */
+#texto-prom-seminario{
+    margin-top: 46px;
+    margin-bottom: inherit;
+    margin-left: 5%;
+    padding: 45px;
+    padding-left: 78px;
+}
+#h1-seminario{
+    line-height: 50px;
+}
+/*******/
+
+/* Imagen promocional 2 */
+#art-img-2{
+    margin-top: auto;
+    margin-right: 10%;
+    padding: 2%;
+}
+#estrella{
+    width: 60px;
+    top: 156%;
+    right: 45%;
+}
+#img-prom-2{
+    width: 110%;
+}
+/*******/
+
+/* Contenedor de skills desarrolladas en el curso */
+#cont-items-desarrollo-curso{
+    background-color: #5f6bb3;
+    padding-inline: 15%;
+}
+/*******/
+
+/* Imagenes de items de skills */
+.item-des-curso{
+    width: 40%;
+    padding-bottom: 10%;
+}
+/*******/
+
+/* Contenedor de boton de Adquirir curso */
+#btn-adquirir-curso{
+    padding-bottom: 60px;
+    padding-left: 45%;
+}
+/*******/
