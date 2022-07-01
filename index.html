@@ -5,52 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
+<!-------------------------------------- Header --------------------------------------------------->
     <header>
+        <div class="container">
+            <div class="row" class="header-nav">
+                <img src="img/header.jpg" alt="Imagen estenopeica" class="fondoheader" class="mx-auto"/>
+                <a href="index.html" class="logoimg" ><img src="img/logo.png" alt="Peapic Cursos" class="d-inline-flex flex-row position-absolute top-40 start-50" style="width: 10%;"/></a>
+                <div class="col-md-12 d-inline-flex flex-row-reverse">
+                    <div class="inicio">
+                        <p class="ingresar" style="color: white">Ingresar</p>
+                        <p class="registrarse" style="color: white">Registrarse</p>
+                    </div>
+                </div>
+                <div class="nav" style="padding: 7%; padding-left: 17%;">
+                    <div class="col-md-3 d-inline-flex flex-row justify-content-between">
+                        <a href="cursosView.html">Cursos</a>
+                    </div>
+                    <div class="col-md-3 d-inline-flex flex-row justify-content-between">
+                        <a href="equipoView.html">Equipo</a>
+                    </div>
 
+                    <div class="col-md-3 d-inline-flex flex-row-reverse justify-content-between">
+                        <a href="galeriaView.html">Galería</a>
+                    </div>
+                    <div class="col-md-3 d-inline-flex flex-row-reverse justify-content-between">
+                        <a href="contactoView.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
     </header>
-    <main class="container">
+    <!------------------------------------------------------------------------------------------------>
+    <main>
         <div class="row">
-            <article class="col">
-                <img src="img/Can-you-use-a-photo-commercially-if-you-credit-the-photographer_518_6068348_0_14111049_1000.jpg" class="img_fluid" alt="Imagen Promocional 1">
+            <article id="art-img-1" class="col">
+                <img src="img/Can-you-use-a-photo-commercially-if-you-credit-the-photographer_518_6068348_0_14111049_1000.jpg" class="img_fluid" alt="Imagen Promocional 1" id="img-prom-1">
             </article>
-            <article class="col">
-                <h1>Bienvenido a Peapic</h1>
-                <h3>Somos la empresa más innovadora en cursos de fotografía y cine estenopeicos gracias a nuestra amplia experiencia profecional.</h3>
-                <a class="btn btn-warning" href="#" role="button">Registrate</a>
+            <article id="art-bienvenidos" class="col text-white">
+                <h1><strong>Bienvenido a Peapic</strong></h1>
+                <h4 id="bienvenidos-parrafo">Somos la empresa más innovadora en cursos de fotografía y cine estenopeicos gracias a nuestra amplia experiencia profecional.</h4>
+                <a class="btn btn-warning" href="#" role="button"><strong>Registrate</strong></a>
             </article>
         </div>
-        <div class="col">
-            <article class="col">
-                <h1>MIRÁ NUESTRO ÚLTIMO SEMINARIO GRATUITO SOBRE CÁMARAS ESTENOPEICAS</h1>
-                <a class="btn btn-warning" href="#" role="button">Mirar ahora</a>
+        <div class="row" id="row-2">
+            <article class="col" id="texto-prom-seminario">
+                <h1 id="h1-seminario"><strong>MIRÁ NUESTRO ÚLTIMO SEMINARIO GRATUITO SOBRE CÁMARAS ESTENOPEICAS</strong></h1>
+                <a class="btn btn-warning" href="#" role="button"><strong>Mirar ahora</strong></a>
             </article>
-            <article class="col">
-                <img src="img/estrella.png" class="img_fluid" alt="estrella detalle">
-                <img src="img/7637014494_c6c01f6006_z.jpg" class="img-fluid" alt="Imagen Promocional 2">
+            <article class="col" id="art-img-2">
+                <img src="img/estrella.png" class="img_fluid position-absolute" alt="estrella detalle" id="estrella">
+                <img src="img/7637014494_c6c01f6006_z.jpg" alt="Imagen Promocional 2" id="img-prom-2">
             </article>
         </div>
-        <div class="row">
-            <h2>A lo largo de nuestros cursos desarrollarás</h2>
+        <div class="row text-center" id="texto-desarrollo-curso">
+            <h2><strong>A lo largo de nuestros cursos desarrollarás</strong></h2>
         </div>
-        <div class="row">
-            <article class="col">
-                <img src="img/burbuja-de-dialogo.png" alt="comunicacion">
+        <div class="row text-white text-center" id="cont-items-desarrollo-curso">
+            <article class="col text-center">
+                <img src="img/burbuja-de-dialogo.png" alt="comunicacion" class="item-des-curso">
                 <h4>Nuevos recursos para comunicar</h4>
             </article>
-            <article class="col">
-                <img src="img/creatividad.png" alt="creatividad">
+            <article class="col text-center">
+                <img src="img/creatividad.png" alt="creatividad" class="item-des-curso">
                 <h4>Creatividad e imaginación</h4>
             </article>
-            <article class="col">
-                <img src="img/bombilla.png" alt="vision">
+            <article class="col text-center">
+                <img src="img/bombilla.png" alt="vision" class="item-des-curso">
                 <h4>Visión y curiosidad</h4>
             </article>
         </div>
-        <div class="row">
-            <a class="btn btn-warning" href="cursosView.html" role="button">Adquirí tu curso</a>
+        <div class="row" id="btn-adquirir-curso">
+            <a class="btn btn-warning" href="cursosView.html" role="button"><strong>Adquirí tu curso</strong></a>
         </div>
     </main>
     <footer>
