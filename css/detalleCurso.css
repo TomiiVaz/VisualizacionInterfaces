@@ -1,0 +1,27 @@
+/* General */
+/**********/
+
+/* Titulas principal */
+#titular{
+    margin-bottom: 2%;
+}
+/**********/
+
+/* Imagen e items del curso */
+#img-camaras{
+    padding-inline: 8%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+#camaras{
+    width: 110%;
+}
+.contenedor-items-curso{
+    padding: 2%;
+}
+.icono-curso{
+    width: 5%;
+    float: left;
+}
+/**********/
+
