@@ -1,10 +1,22 @@
 /* Color de los titulos -> #ADAFFE */
+/* Color de parte contacto -> #5f6bb3*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .desvanecer:hover {
-    opacity: 0.2;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
-  }
+  opacity: 0.2;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.iframe {
+  -webkit-box-shadow: 11px 11px 0px -3px #5f6bb3;
+  box-shadow: 12px 12px 0px 0px #5f6bb3;
+}
