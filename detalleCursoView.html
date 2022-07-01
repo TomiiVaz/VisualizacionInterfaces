@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalleCurso.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>Detalle Curso</title>
 </head>
@@ -56,19 +57,31 @@
         </div>
     </div>
 </header>
-    <main class="container">
-        <div class="row text-center">
-            <h1 style="color: #ADAFFE;">CREACIÓN DE CÁMARAS ESTENOPEICAS</h1>
-            <h4>Dictado por Florencia Gomez</h4>
-        </div>
-        <div class="row">
-            <article class="col">
-                <img src="img/unnamed.jpg" class="img-fluid" alt="camaras">
-                <h6>No necesitas conocimientos previos</h6>
-                <h6>15 videos</h6>
-                <h6>Materiales incluídos</h6>
-                <h6>Certificado</h6>
-            </article>
+<main>
+    <div class="row text-center" id="titular">
+      <h1 style="color: #ADAFFE;"><strong>CREACIÓN DE CÁMARAS ESTENOPEICAS</strong></h1>
+      <h4>Dictado por Florencia Gomez</h4>
+    </div>
+      <div class="row">
+        <article class="col" id="img-camaras">
+          <img src="img/unnamed.jpg" alt="camaras" id="camaras">
+          <div class="contenedor-items-curso">
+            <img src="img/knowledge.png" class="icono-curso" alt="conocimiento">
+            <h5 class="item-curso">No necesitas conocimientos previos</h5>
+          </div>
+          <div class="contenedor-items-curso">
+            <img src="img/tiempo-rapido.png" class="icono-curso" alt="tiempo">
+            <h5 class="item-curso">15 videos</h5>
+          </div>
+          <div class="contenedor-items-curso">
+            <img src="img/pencil-holder.png" class="icono-curso" alt="materiales">            
+            <h5 class="item-curso">Materiales incluídos</h5>
+          </div>
+          <div class="contenedor-items-curso">
+            <img src="img/certificado.png" class="icono-curso" alt="certificado">
+            <h5 class="item-curso">Certificado</h5>
+          </div>
+        </article>
             <article class="col">
                 <h6>
                     En este curso entenderás los fundamentos de cada material al realizar un tipo de cámara estenopeica.
@@ -179,7 +192,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
+      </div>
     </main>
     <footer>
       <div class="footer" class="img-fluid bg-image d-flex" style="background-image: url('img/footer.jpg'); margin-top: 3%;">
