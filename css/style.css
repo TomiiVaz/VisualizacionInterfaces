@@ -21,3 +21,25 @@
   -webkit-box-shadow: 11px 11px 0px -3px #5f6bb3;
   box-shadow: 12px 12px 0px 0px #5f6bb3;
 }
+
+/* Estilo header y foooter */
+
+.header{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container{
+  margin: auto;
+  padding: auto;
+}
+
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
