@@ -9,16 +9,17 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Equipo</title>
 </head>
 
 <body>
     <header style="background-image: url('img/header.jpg');">
         <div class="text-end me-4 pt-4">
-            <button class="btn border-0 me-1"><a href="#" class="text-white">Ingresar</a></button>
-            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;"><a href="#"
-                    class="text-dark text-decoration-none">Registrarse</a></button>
+            <button class="btn border-0 me-1 text-white" data-bs-toggle="modal"
+                data-bs-target="#ModalLogin">Ingresar</button>
+            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;" data-bs-toggle="modal"
+                data-bs-target="#ModalRegistrarse">Registrarse</button>
             <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
         </div>
         <div class="container pb-1">
@@ -41,9 +42,79 @@
                 </div>
             </div>
         </div>
+
+        <!-- Iniciar Sesion -->
+        <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #ADAFFE">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Ingresa a tu cuenta!
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="index.html" id="formLogin">
+                        <div class="modal-body text-center">
+                            <input type="text" class="form-control" id="validarUsuario" placeholder="Usuario" required>
+                            <input type="text" class="form-control mt-3" id="validarClave" placeholder="Clave" required>
+                            <a href="#" class="text-white mt-2">¿Olvidaste tu contraseña?</a>
+                            <div class="valid-feedback">
+                                Correcto!
+                            </div>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Usuario o ontraseña incorrecto!
+                            </div>
+                            <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                                style="background-color: #EDEC87;">Ingresar</button>
+                            <div class="mt-4">
+                                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Iniciar Sesion -->
+
+        <!-- Registrarse -->
+        <div class="modal fade" id="ModalRegistrarse" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #ADAFFE">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Registrate y comenza a
+                            aprender!
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="index.html" id="formRegistrar">
+                        <div class="modal-body text-center">
+                            <input type="text" class="form-control" id="validarNombre" placeholder="Nombre completo"
+                                required>
+                            <input type="text" class="form-control mt-3" id="validarCorreo"
+                                placeholder="Correo electronico" required>
+                            <input type="text" class="form-control mt-3" id="validarCorreo2"
+                                placeholder="Confirme su correo electronico" required>
+                            <input type="password" class="form-control mt-3" id="validarContraseña" placeholder="Contraseña"
+                                required>
+                            <input type="password" class="form-control mt-3" id="validarContraseña2" placeholder="Contraseña2"
+                                required>
+                            <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                                style="background-color: #EDEC87;">Registrarse</button>
+                            <div class="mt-4">
+                                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Registrarse -->
+
     </header>
     <main class="container text-center mt-4 mb-5">
-        <h1 style="color: #ADAFFE;">DOCENTES</h1>
+        <h1 style="color: #ADAFFE; font-family: serif">DOCENTES</h1>
         <h4>Te presentamos nuestro equipo</h4>
         <article class="row mt-5 mb-5">
 
@@ -51,22 +122,26 @@
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Marcela-Grilli.jpg" alt="marcela Grilli" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Soy profesora
-                        experta. Y vos tambien lo serás.
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                        Localidad: Merlo
+                        <br>
+                        Edad: 36
                     </h6>
                 </div>
-                <h5 class="mt-2">Marcela Grilli</h5>
+                <h5 class="mt-2">Marcela Grilli <br> Licenciada en RRHH</h5>
             </section>
 
 
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Estefania.jpg" alt="Estefania Santana" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Estudie aqui
-                        mismo y ahora enseño.
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                        Localidad: Lanus
+                        <br>
+                        Edad: 40
                     </h6>
                 </div>
-                <h5 class="mt-2">Estefania Santana</h5>
+                <h5 class="mt-2">Estefania Santana <br> Fotografa profesional</h5>
             </section>
 
         </article>
@@ -74,39 +149,49 @@
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Santiago.jpg" alt="Santiago Espina" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Me encanta la
-                        fotografia.
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                        Localidad: Tigre
+                        <br>
+                        Edad: 32
                     </h6>
                 </div>
-                <h5 class="mt-2">Santiago Espina</h5>
+                <h5 class="mt-2">Santiago Espina <br> Fotografo profesional</h5>
             </section>
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Florencia.jpg" alt="Florencia Gomez" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">El ambiente aqui
-                        es muy bueno.
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                        Localidad: Berazategui
+                        <br>
+                        Edad: 33
                     </h6>
                 </div>
-                <h5 class="mt-2">Florencia Gomez</h5>
+                <h5 class="mt-2">Florencia Gomez <br> Licenciada en RRHH</h5>
             </section>
         </article class="mb-5 mt-5">
         <article class="row">
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Franco.jpg" alt="Franco Capra" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Me siento muy
-                        bien al poder trabajr acá.</h6>
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Localidad:
+                        Ituzaingo
+                        <br>
+                        Edad: 42
+                    </h6>
+
                 </div>
-                <h5 class="mt-2">Franco Capra</h5>
+                <h5 class="mt-2">Franco Capra <br> Master en educacion</h5>
             </section>
             <section class="col-6">
                 <div class="position-relative">
                     <img src="img/Juan.jpg" alt="Juan Hapes" class="w-50 desvanecer">
-                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">Ahora no paro de
-                        tomar fotos!
+                    <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                        Localidad: Cordoba
+                        <br>
+                        Edad: 35
                     </h6>
                 </div>
-                <h5 class="mt-2">Juan Hopes</h5>
+                <h5 class="mt-2">Juan Hopes <br> Artes digitales</h5>
             </section>
         </article>
     </main>
@@ -145,7 +230,7 @@
     </footer>
 
 
-
+    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
