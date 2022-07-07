@@ -22,6 +22,12 @@
   box-shadow: 12px 12px 0px 0px #5f6bb3;
 }
 
+.whatsapp{
+  position: fixed;
+  right: 2em;
+  bottom: 5em;
+}
+
 /* Estilo header y foooter */
 
 .header{
