@@ -1,199 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/detalleCurso.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Detalle Curso</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detalleCurso.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Detalle Curso</title>
 </head>
+
 <body>
   <header style="background-image: url('img/header.jpg');">
     <div class="text-end me-4 pt-4">
-        <button class="btn border-0 me-1"><a href="#" class="text-white">Ingresar</a></button>
-        <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;"><a href="#"
-                class="text-dark text-decoration-none">Registrarse</a></button>
-        <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
+      <button class="btn border-0 me-1 text-white" data-bs-toggle="modal" data-bs-target="#ModalLogin">Ingresar</button>
+      <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;" data-bs-toggle="modal"
+        data-bs-target="#ModalRegistrarse">Registrarse</button>
+      <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
     </div>
     <div class="container pb-1">
-        <div class="nav d-flex justify-content-center" style="font-size: 1.5vw;">
-            <div class="row align-items-end">
-                <a href="cursosView.html" style="color: #ADAFFE;">Cursos</a>
-            </div>
-            <div class="row align-items-end me-3 ms-3">
-                <a href="equipoView.html">Equipo</a>
-            </div>
-            <div>
-                <a href="index.html" class="text-center"><img src="img/logo.png" alt="Peapic Cursos"
-                        width="150px" /></a>
-            </div>
-            <div class="row align-items-end me-3 ms-3">
-                <a href="galeriaView.html">Galería</a>
-            </div>
-            <div class="row align-items-end">
-                <a href="contactoView.html">Contacto</a>
-            </div>
+      <div class="nav d-flex justify-content-center" style="font-size: 1.5vw;">
+        <div class="row align-items-end">
+          <a href="cursosView.html" style="color: #ADAFFE;">Cursos</a>
         </div>
+        <div class="row align-items-end me-3 ms-3">
+          <a href="equipoView.html">Equipo</a>
+        </div>
+        <div>
+          <a href="index.html" class="text-center"><img src="img/logo.png" alt="Peapic Cursos" width="150px" /></a>
+        </div>
+        <div class="row align-items-end me-3 ms-3">
+          <a href="galeriaView.html">Galería</a>
+        </div>
+        <div class="row align-items-end">
+          <a href="contactoView.html">Contacto</a>
+        </div>
+      </div>
     </div>
-</header>
-<main>
+
+    <!-- Iniciar Sesion -->
+    <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #ADAFFE">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Ingresa a tu cuenta!
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="index.html" id="formLogin">
+            <div class="modal-body text-center">
+              <input type="text" class="form-control" id="validarUsuario" placeholder="Usuario" required>
+              <input type="text" class="form-control mt-3" id="validarClave" placeholder="Clave" required>
+              <a href="#" class="text-white mt-2">¿Olvidaste tu contraseña?</a>
+              <div class="valid-feedback">
+                Correcto!
+              </div>
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Usuario o ontraseña incorrecto!
+              </div>
+              <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                style="background-color: #EDEC87;">Ingresar</button>
+              <div class="mt-4">
+                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /Iniciar Sesion -->
+
+    <!-- Registrarse -->
+    <div class="modal fade" id="ModalRegistrarse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #ADAFFE">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Registrate y comenza a
+              aprender!
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="index.html" id="formRegistrar">
+            <div class="modal-body text-center">
+              <input type="text" class="form-control" id="validarNombre" placeholder="Nombre completo" required>
+              <input type="text" class="form-control mt-3" id="validarCorreo" placeholder="Correo electronico" required>
+              <input type="text" class="form-control mt-3" id="validarCorreo2"
+                placeholder="Confirme su correo electronico" required>
+              <input type="password" class="form-control mt-3" id="validarContraseña" placeholder="Contraseña" required>
+              <input type="password" class="form-control mt-3" id="validarContraseña2" placeholder="Contraseña2"
+                required>
+              <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                style="background-color: #EDEC87;">Registrarse</button>
+              <div class="mt-4">
+                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /Registrarse -->
+
+  </header>
+  <main>
     <div class="row text-center" id="titular">
       <h1 style="color: #ADAFFE;"><strong>CREACIÓN DE CÁMARAS ESTENOPEICAS</strong></h1>
       <h4>Dictado por Florencia Gomez</h4>
     </div>
-      <div class="row">
-        <article class="col" id="img-camaras">
-          <img src="img/unnamed.jpg" alt="camaras" id="camaras">
-          <div class="contenedor-items-curso">
-            <img src="img/knowledge.png" class="icono-curso" alt="conocimiento">
-            <h5 class="item-curso">No necesitas conocimientos previos</h5>
-          </div>
-          <div class="contenedor-items-curso">
-            <img src="img/tiempo-rapido.png" class="icono-curso" alt="tiempo">
-            <h5 class="item-curso">15 videos</h5>
-          </div>
-          <div class="contenedor-items-curso">
-            <img src="img/pencil-holder.png" class="icono-curso" alt="materiales">            
-            <h5 class="item-curso">Materiales incluídos</h5>
-          </div>
-          <div class="contenedor-items-curso">
-            <img src="img/certificado.png" class="icono-curso" alt="certificado">
-            <h5 class="item-curso">Certificado</h5>
-          </div>
-        </article>
-            <article class="col">
-                <h6>
-                    En este curso entenderás los fundamentos de cada material al realizar un tipo de cámara estenopeica.
-                    Gracias a nuestro taller de carpintería contamos con una amplia variedad de tipos de madera y materiales
-                    específicos para la creacion de una cámara de la mayor calidad posible.
-                </h6>
-                <br>
-                <h6>
-                    En este nivel, con el apoyo de la profesora Florencia Gomez, podrás personalizar tu propia cámara con
-                    el objetivo de urilizarla en próximos cursos.
-                </h6>
-                <h1>$5.000 ARS</h1>
-                <a class="btn btn-warning" href="#" role="button">Comprar</a>
-                <button class="btn btn-outline-warning">Añadir al carrito</button>
-            </article>
+    <div class="row">
+      <article class="col" id="img-camaras">
+        <img src="img/unnamed.jpg" alt="camaras" id="camaras">
+        <div class="contenedor-items-curso">
+          <img src="img/knowledge.png" class="icono-curso" alt="conocimiento">
+          <h5 class="item-curso">No necesitas conocimientos previos</h5>
         </div>
-        <div class="row">
-            <article class="col">
-                <h4>Contenidos del curso</h4>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Introducción
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <h6>¿Quién dicta este curso?</h6>
-                            <h6>Influencias</h6>
-                            <h6>¿Qupe haremos durante el curso?</h6>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Qué necesitamos saber
-                          </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Construimos la cámara
-                          </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Proyecto final
-                          </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col">
-                <img src="img/pexels-yura-forrat-8642037.jpg" class="img-fluid" alt="img-2">
-                <div id="sombra-img"></div>
-            </article>
+        <div class="contenedor-items-curso">
+          <img src="img/tiempo-rapido.png" class="icono-curso" alt="tiempo">
+          <h5 class="item-curso">15 videos</h5>
         </div>
-        <div class="row">
-            <article>
-                <img src="img/clasificacion.png" alt="clasificacion">
-                <h2>Reseñas de alumnos graduados</h2>
-            </article>
-            <div id="carouselComentarios" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <h5>Carlos Perez, 22/01/2021</h5>
-                    <p>
-                        Soy principiante en el arte de la fotografóa estenopeica y este curso me da muchas herramientas
-                        para ello además de dar un giro completo a cómo obtener fortografías creando tu propia cámara.
-                        Lo super recomiendo!
-                    </p>
-                  </div>
-                  <div class="carousel-item">
-                    <h5>Sofía Lopez, 15/06/2020</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, deserunt aspernatur? 
-                        Maxime veritatis voluptatem dicta qui aliquam magnam fugit doloremque eveniet minus debitis eius, 
-                        error quasi ad aut vel minima!
-                    </p>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselComentarios" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselComentarios" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="contenedor-items-curso">
+          <img src="img/pencil-holder.png" class="icono-curso" alt="materiales">
+          <h5 class="item-curso">Materiales incluídos</h5>
+        </div>
+        <div class="contenedor-items-curso">
+          <img src="img/certificado.png" class="icono-curso" alt="certificado">
+          <h5 class="item-curso">Certificado</h5>
+        </div>
+      </article>
+      <article class="col">
+        <h6>
+          En este curso entenderás los fundamentos de cada material al realizar un tipo de cámara estenopeica.
+          Gracias a nuestro taller de carpintería contamos con una amplia variedad de tipos de madera y materiales
+          específicos para la creacion de una cámara de la mayor calidad posible.
+        </h6>
+        <br>
+        <h6>
+          En este nivel, con el apoyo de la profesora Florencia Gomez, podrás personalizar tu propia cámara con
+          el objetivo de urilizarla en próximos cursos.
+        </h6>
+        <h1>$5.000 ARS</h1>
+        <a class="btn btn-warning" href="#" role="button">Comprar</a>
+        <button class="btn btn-outline-warning">Añadir al carrito</button>
+      </article>
+    </div>
+    <div class="row">
+      <article class="col">
+        <h4>Contenidos del curso</h4>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Introducción
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h6>¿Quién dicta este curso?</h6>
+                <h6>Influencias</h6>
+                <h6>¿Qupe haremos durante el curso?</h6>
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Qué necesitamos saber
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Construimos la cámara
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Proyecto final
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <img src="img/pexels-yura-forrat-8642037.jpg" class="img-fluid" alt="img-2">
+        <div id="sombra-img"></div>
+      </article>
+    </div>
+    <div class="row">
+      <article>
+        <img src="img/clasificacion.png" alt="clasificacion">
+        <h2>Reseñas de alumnos graduados</h2>
+      </article>
+      <div id="carouselComentarios" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5>Carlos Perez, 22/01/2021</h5>
+            <p>
+              Soy principiante en el arte de la fotografóa estenopeica y este curso me da muchas herramientas
+              para ello además de dar un giro completo a cómo obtener fortografías creando tu propia cámara.
+              Lo super recomiendo!
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h5>Sofía Lopez, 15/06/2020</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, deserunt aspernatur?
+              Maxime veritatis voluptatem dicta qui aliquam magnam fugit doloremque eveniet minus debitis eius,
+              error quasi ad aut vel minima!
+            </p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselComentarios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselComentarios" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </main>
-    <footer>
-      <div class="footer" class="img-fluid bg-image d-flex" style="background-image: url('img/footer.jpg'); margin-top: 3%;">
-        <div class="container">
-            <a href="index.html" class="logoimg" class="position-relative"><img src="img/logofinal_palabra.png"
+    </div>
+  </main>
+  <footer>
+    <div class="footer" class="img-fluid bg-image d-flex"
+      style="background-image: url('img/footer.jpg'); margin-top: 3%;">
+      <div class="container">
+        <a href="index.html" class="logoimg" class="position-relative"><img src="img/logofinal_palabra.png"
             alt="Peapic Cursos" class="imgfluid flex-row position-absolute start-50"
             style="width: 15%; padding-top: 8%; margin-left: 32%;" /></a>
-            <div class="direccion" class="d-inline-flex" style="padding-top: 5%; color: white;">
-                <h5 style="text-align: center; font-size: 1.2vw;">Av. Santa Fe y Salguero, CABA <br> contacto@peapic.com</h5>
-            </div>
-            <div class="logos" class="position-relative" style="padding-left: 43%; padding-top: 1.5%;">
-            <a href="index.html"><img src="img/facebook.png" alt="Logo de facebook" class="imgfluid flex-row position-absolute d-inline-flex"></a>
-            <a href="index.html"><img src="img/instagram.png" alt="Logo de instagram" class="imgfluid flex-row position-absolute d-inline-flex" style="padding-left: 7%"></a>
-        
+        <div class="direccion" class="d-inline-flex" style="padding-top: 5%; color: white;">
+          <h5 style="text-align: center; font-size: 1.2vw;">Av. Santa Fe y Salguero, CABA <br> contacto@peapic.com</h5>
+        </div>
+        <div class="logos" class="position-relative" style="padding-left: 43%; padding-top: 1.5%;">
+          <a href="index.html"><img src="img/facebook.png" alt="Logo de facebook"
+              class="imgfluid flex-row position-absolute d-inline-flex"></a>
+          <a href="index.html"><img src="img/instagram.png" alt="Logo de instagram"
+              class="imgfluid flex-row position-absolute d-inline-flex" style="padding-left: 7%"></a>
+
 
         </div>
-</div>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </footer>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </footer>
 </body>
+
 </html>

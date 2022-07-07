@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/galeriaView.css">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galeriaView.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
 
     <header style="background-image: url('img/header.jpg');">
         <div class="text-end me-4 pt-4">
-            <button class="btn border-0 me-1"><a href="#" class="text-white">Ingresar</a></button>
-            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;"><a href="#"
-                    class="text-dark text-decoration-none">Registrarse</a></button>
+            <button class="btn border-0 me-1 text-white" data-bs-toggle="modal"
+                data-bs-target="#ModalLogin">Ingresar</button>
+            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;" data-bs-toggle="modal"
+                data-bs-target="#ModalRegistrarse">Registrarse</button>
             <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
         </div>
         <div class="container pb-1">
             <div class="nav d-flex justify-content-center" style="font-size: 1.5vw;">
                 <div class="row align-items-end">
-                    <a href="cursosView.html" >Cursos</a>
+                    <a href="cursosView.html">Cursos</a>
                 </div>
                 <div class="row align-items-end me-3 ms-3">
                     <a href="equipoView.html">Equipo</a>
@@ -33,94 +37,189 @@
                             width="150px" /></a>
                 </div>
                 <div class="row align-items-end me-3 ms-3">
-                    <a href="galeriaView.html" style="color: #ADAFFE;">Galería</a>
+                    <a href="galeriaView.html"  style="color: #ADAFFE;">Galería</a>
                 </div>
                 <div class="row align-items-end">
                     <a href="contactoView.html">Contacto</a>
                 </div>
             </div>
         </div>
-    </header>
 
+        <!-- Iniciar Sesion -->
+        <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #ADAFFE">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Ingresa a tu cuenta!
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="index.html" id="formLogin">
+                        <div class="modal-body text-center">
+                            <input type="text" class="form-control" id="validarUsuario" placeholder="Usuario" required>
+                            <input type="text" class="form-control mt-3" id="validarClave" placeholder="Clave" required>
+                            <a href="#" class="text-white mt-2">¿Olvidaste tu contraseña?</a>
+                            <div class="valid-feedback">
+                                Correcto!
+                            </div>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Usuario o ontraseña incorrecto!
+                            </div>
+                            <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                                style="background-color: #EDEC87;">Ingresar</button>
+                            <div class="mt-4">
+                                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Iniciar Sesion -->
+
+        <!-- Registrarse -->
+        <div class="modal fade" id="ModalRegistrarse" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #ADAFFE">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Registrate y comenza a
+                            aprender!
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="index.html" id="formRegistrar">
+                        <div class="modal-body text-center">
+                            <input type="text" class="form-control" id="validarNombre" placeholder="Nombre completo"
+                                required>
+                            <input type="text" class="form-control mt-3" id="validarCorreo"
+                                placeholder="Correo electronico" required>
+                            <input type="text" class="form-control mt-3" id="validarCorreo2"
+                                placeholder="Confirme su correo electronico" required>
+                            <input type="password" class="form-control mt-3" id="validarContraseña"
+                                placeholder="Contraseña" required>
+                            <input type="password" class="form-control mt-3" id="validarContraseña2"
+                                placeholder="Contraseña2" required>
+                            <button type="submit" class="btn border-0 m-auto d-block mt-3"
+                                style="background-color: #EDEC87;">Registrarse</button>
+                            <div class="mt-4">
+                                <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
+                                <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Registrarse -->
+
+    </header>
     <main>
         <h1 class="text-center" style="color:#ADAFFE"> GALERIA MULTIMEDIA</h1>
-    <H2 class="text-center">Los mejores resultados obtenidos de nuestros alumnos </H2>
-    <div class="contenedortotal"> 
-<div id="galeria" class="container">
-   
-    <div class="row" id="row1">
+        <H2 class="text-center">Los mejores resultados obtenidos de nuestros alumnos </H2>
+        <div class="contenedortotal">
+            <div id="galeria" class="container">
 
-     <div class="col-8 position-relative" id="col8"> 
-        
-        <img id="img11" src="img/WhatsApp Image 2021-07-01 at 17.57.03.jpg" alt="img11"  class=" h-100 w-100 desvanecer "><h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR JOSEFINA DUPONT. Fotografía tomada 
-            con cámara estenopeica durante el curso de creación de cámaras estenopeicas en el año 2020.
-    </h6>
-</div>
-     
-          
-     <div class="col-4 position-relative" id="col4">
-            
-            <img id="img22" src="img/WhatsApp Image 2021-07-01 at 17.57.02.jpg" alt="img22"  class="h-100 w-100 desvanecer">
-            <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR PEDRO GARCÍA. Fotografía tomada 
-                con cámara estenopeica durante el curso de revelado en el año 2020.
-    </h6>
-           
-         </div>
+                <div class="row" id="row1">
 
-         <div class="row " id="row2">
-           
-         <div class="col-12 position-relative" id="col12">
-           
-                <img id="img33" src="img/WhatsApp Image 2021-07-01 at 17.57.04.jpg" alt="img33" class="w-100 h-100  desvanecer"><h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR SILVIA PEREZ. Fotografía tomada 
-                    con cámara estenopeica durante el taller de cine y cortometrajes en el año 2021.
-        </h6></div>
-         
-        </div>
-         <div class="row" id="row3">
-        <div class="col-4 position-relative" id="tou">
-            <img id="img44" src="img/WhatsApp Image 2021-07-01 at 18.01.12.jpg" alt="img44" class="w-100 h-100 desvanecer"><h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR DANIELA GÓMEZ. Fotografía tomada 
-                con cámara estenopeica durante el curso de revelado en el año 2019.
-                </h6></div>
-            <div class="col-4 position-relative" id="tou">
-                <img id="img55" src="img/WhatsApp Image 2021-07-01 at 17.58.44.jpg" alt="img55" class="h-100 w-100 desvanecer"><h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR FEDERICO AMADO. Fotografía tomada 
-                    con camara estenopeica durante el curso de revelado en el año 2021.
-                </h6></div>
-                <div class="col-4 position-relative" id="tou" >
-                  <img id="img66" src="img/PinholeBladColor11-950x950.jpg" alt="img66" class="w-100 h-100 desvanecer"><h6 class="position-absolute top-50 start-50 translate-middle " style="z-index: -1;"> AUTOR CAMILA ROJAS. Fotografía tomada 
-                        con cámara estenopeica durante el taller de creación de cortometrajes en el año 2020.
-                    </h6>
-        
+                    <div class="col-8 position-relative" id="col8">
+
+                        <img id="img11" src="img/WhatsApp Image 2021-07-01 at 17.57.03.jpg" alt="img11"
+                            class=" h-100 w-100 desvanecer ">
+                        <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR
+                            JOSEFINA DUPONT. Fotografía tomada
+                            con cámara estenopeica durante el curso de creación de cámaras estenopeicas en el año 2020.
+                        </h6>
                     </div>
-        </div>
-        
-        
-  </div>      
-</div>
+
+
+                    <div class="col-4 position-relative" id="col4">
+
+                        <img id="img22" src="img/WhatsApp Image 2021-07-01 at 17.57.02.jpg" alt="img22"
+                            class="h-100 w-100 desvanecer">
+                        <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR PEDRO
+                            GARCÍA. Fotografía tomada
+                            con cámara estenopeica durante el curso de revelado en el año 2020.
+                        </h6>
+
+                    </div>
+
+                    <div class="row " id="row2">
+
+                        <div class="col-12 position-relative" id="col12">
+
+                            <img id="img33" src="img/WhatsApp Image 2021-07-01 at 17.57.04.jpg" alt="img33"
+                                class="w-100 h-100  desvanecer">
+                            <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR
+                                SILVIA PEREZ. Fotografía tomada
+                                con cámara estenopeica durante el taller de cine y cortometrajes en el año 2021.
+                            </h6>
+                        </div>
+
+                    </div>
+                    <div class="row" id="row3">
+                        <div class="col-4 position-relative" id="tou">
+                            <img id="img44" src="img/WhatsApp Image 2021-07-01 at 18.01.12.jpg" alt="img44"
+                                class="w-100 h-100 desvanecer">
+                            <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR
+                                DANIELA GÓMEZ. Fotografía tomada
+                                con cámara estenopeica durante el curso de revelado en el año 2019.
+                            </h6>
+                        </div>
+                        <div class="col-4 position-relative" id="tou">
+                            <img id="img55" src="img/WhatsApp Image 2021-07-01 at 17.58.44.jpg" alt="img55"
+                                class="h-100 w-100 desvanecer">
+                            <h6 class="position-absolute top-50 start-50 translate-middle" style="z-index: -1;">AUTOR
+                                FEDERICO AMADO. Fotografía tomada
+                                con camara estenopeica durante el curso de revelado en el año 2021.
+                            </h6>
+                        </div>
+                        <div class="col-4 position-relative" id="tou">
+                            <img id="img66" src="img/PinholeBladColor11-950x950.jpg" alt="img66"
+                                class="w-100 h-100 desvanecer">
+                            <h6 class="position-absolute top-50 start-50 translate-middle " style="z-index: -1;"> AUTOR
+                                CAMILA ROJAS. Fotografía tomada
+                                con cámara estenopeica durante el taller de creación de cortometrajes en el año 2020.
+                            </h6>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
 
     </main>
 
     <footer>
-        <div class="footer" class="img-fluid bg-image d-flex" style="background-image: url('img/footer.jpg'); margin-top: 3%;">
+        <div class="footer" class="img-fluid bg-image d-flex"
+            style="background-image: url('img/footer.jpg'); margin-top: 3%;">
             <div class="container">
                 <a href="index.html" class="logoimg" class="position-relative"><img src="img/logofinal_palabra.png"
-                alt="Peapic Cursos" class="imgfluid flex-row position-absolute start-50"
-                style="width: 15%; padding-top: 8%; margin-left: 32%;" /></a>
+                        alt="Peapic Cursos" class="imgfluid flex-row position-absolute start-50"
+                        style="width: 15%; padding-top: 8%; margin-left: 32%;" /></a>
                 <div class="direccion" class="d-inline-flex" style="padding-top: 5%; color: white;">
-                    <h5 style="text-align: center; font-size: 1.2vw;">Av. Santa Fe y Salguero, CABA <br> contacto@peapic.com</h5>
+                    <h5 style="text-align: center; font-size: 1.2vw;">Av. Santa Fe y Salguero, CABA <br>
+                        contacto@peapic.com</h5>
                 </div>
                 <div class="logos" class="position-relative" style="padding-left: 44%; padding-top: 1.5%;">
-                <a href="index.html"><img src="img/facebook.png" alt="Logo de facebook" class="imgfluid flex-row position-absolute d-inline-flex"></a>
-                <a href="index.html"><img src="img/instagram.png" alt="Logo de instagram" class="imgfluid flex-row position-absolute d-inline-flex" style="padding-left: 7%"></a>
-            
+                    <a href="index.html"><img src="img/facebook.png" alt="Logo de facebook"
+                            class="imgfluid flex-row position-absolute d-inline-flex"></a>
+                    <a href="index.html"><img src="img/instagram.png" alt="Logo de instagram"
+                            class="imgfluid flex-row position-absolute d-inline-flex" style="padding-left: 7%"></a>
 
+
+                </div>
             </div>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-crossorigin="anonymous"></script>
+        </div>
+        <script src="js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 
     </footer>
-    
+
 </body>
+
 </html>
