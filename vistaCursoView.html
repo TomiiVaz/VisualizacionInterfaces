@@ -14,56 +14,39 @@
 </head>
 
 <body>
-    <header>
-        <div class="header" class="img-fluid bg-image d-flex" style="background-image: url('img/header.jpg');">
-            <div class="container">
-                <a href="index.html" class="logoimg" class="position-relative"><img src="img/logo.png"
-                        alt="Peapic Cursos" class="imgfluid flex-row position-absolute start-50 translate-middle-x"
-                        style="width: 10%; padding-top: 0.5%; padding-bottom: 0.5%;" /></a>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-1 d-flex flex-column m-0">
-                  <a href=""><p class="ingresar" class="d-inline-flex " style="font-size: 1.2vw; color: white;">Ingresar</p></a>
+    <header style="background-image: url('img/header.jpg');">
+        <div class="text-end me-4 pt-4">
+            <button class="btn border-0 me-1"><a href="#" class="text-white">Ingresar</a></button>
+            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;"><a href="#"
+                    class="text-dark text-decoration-none">Registrarse</a></button>
+            <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
+        </div>
+        <div class="container pb-1">
+            <div class="nav d-flex justify-content-center" style="font-size: 1.5vw;">
+                <div class="row align-items-end">
+                    <a href="cursosView.html" style="color: #ADAFFE;">Cursos</a>
                 </div>
-                <div class="col-md-1 d-inline-flex flex-column m-0">
-                    <a href=""><p class="ingresar" class="d-inline-flex " style="font-size: 1.2vw; color: white;">Registrarse</p></a>
+                <div class="row align-items-end me-3 ms-3">
+                    <a href="equipoView.html">Equipo</a>
                 </div>
-
                 <div>
-                    <div class="nav" style="padding: 4%; font-size: 1.5vw;">
-                        <div class="col-md-3 d-inline-flex flex-row justify-content-between">
-                            <a href="cursosView.html">Cursos</a>
-                        </div>
-                        <div class="col-md-3 d-inline-flex flex-row justify-content-between">
-                            <a href="equipoView.html">Equipo</a>
-                        </div>
-
-                        <div class="col-md-3 d-inline-flex flex-row-reverse justify-content-between">
-                            <a href="galeriaView.html">Galería</a>
-                        </div>
-                        <div class="col-md-3 d-inline-flex flex-row-reverse justify-content-between">
-                            <a href="contactoView.html">Contacto</a>
-                        </div>
-
-                    </div>
+                    <a href="index.html" class="text-center"><img src="img/logo.png" alt="Peapic Cursos"
+                            width="150px" /></a>
                 </div>
-
+                <div class="row align-items-end me-3 ms-3">
+                    <a href="galeriaView.html">Galería</a>
+                </div>
+                <div class="row align-items-end">
+                    <a href="contactoView.html">Contacto</a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="comienzo-clase d-block flex-row" style="padding-left: 4%; margin-bottom: 3%; margin-top: 2%; align-items: center;">
-            <a href="#"> <img src="img/3.png" style="width: 3%; " alt="Numero de clase"/></a>
+        <div class="comienzo-clase d-block flex-row"
+            style="padding-left: 4%; margin-bottom: 3%; margin-top: 2%; align-items: center;">
+            <a href="#"> <img src="img/3.png" style="width: 3%; " alt="Numero de clase" /></a>
             <h1 class="nombre-clase d-inline-flex" style="font-size: 2vw; padding-left: 1%;">¿Qué haremos durante el
                 curso?</h1>
         </div>
@@ -74,41 +57,50 @@
                 allowfullscreen></iframe>
         </div>
 
-        <div class="col-md-12 d-flex" class="calificacion d-inline-flex justify-content-around" style="padding-left: 5%; padding-bottom: 2%;">
-            <a href="#"> <img
-                    src="img/me-gusta.png" style="width: 90%;" alt="Me gusta"/></a>
-            <a href="#"><img
-                    src="img/disgusto.png" style="width: 90%;" alt="No me gusta"/></a>
-            <h3 class="d-inline-flex" style="margin-left: 4%; font-size: 1.6vw; align-items: center;">Califica esta clase</h3>    
-            <a href="vistaCursoView.html" style="background-color: #EDEC87; padding-top: 30px; border-radius: 37px; text-decoration: none; color: black; margin-left: 55%; width: 10%; text-align: center; align-items: center; font-size: 2vh;">Siguiente</a>    
-</div>
-        
-<div class="position:relative">
+        <div class="col-md-12 d-flex" class="calificacion d-inline-flex justify-content-around"
+            style="padding-left: 5%; padding-bottom: 2%;">
+            <a href="#"> <img src="img/me-gusta.png" style="width: 90%;" alt="Me gusta" /></a>
+            <a href="#"><img src="img/disgusto.png" style="width: 90%;" alt="No me gusta" /></a>
+            <h3 class="d-inline-flex" style="margin-left: 4%; font-size: 1.6vw; align-items: center;">Califica esta
+                clase</h3>
+            <a href="vistaCursoView.html"
+                style="background-color: #EDEC87; padding-top: 30px; border-radius: 37px; text-decoration: none; color: black; margin-left: 55%; width: 10%; text-align: center; align-items: center; font-size: 2vh;">Siguiente</a>
+        </div>
 
-     <img src="img/buscar.png" class="position-absolute" style="margin-left: 53%; width: 4%; margin-top: 0%; " alt="Informacion acerca de la clase" />
-        <article class="descripcion-clase" style="background-color: #5F6BB3; width: 54%;">
-            <h4 style="font-size: 1vw; color: white; padding: 2%;">
-                En esta video lección, Florencia Gomez aborda el tema: ¿Qué haremos
-                durante el curso?, que forma parte de nuestro curso: Creación de
-                cámara estenopeica. Contruí tu cámara con madera y aprendé a tomar
-                imágenes únicas
-            </h4>
-        </article>
+        <div class="position:relative">
 
-</div>
-<div class="col-xs-6 d-inline-flex flex-row-reverse" style="text-align: center; padding-left: 78%; padding-top: 0.5%; "><h3 style="font-size: 1.5vw;"><strong>Dejanos tu comentario</strong></h3></div>
-<div class="col-xs-6 d-inline-flex flex-row-reverse position-absolute" style="padding-left: 20px; margin-left: 5%; margin-bottom: 2%;" > <img src="img/charla.png" alt="icono de charla" style="position:absolute; padding-left: 80%;text-align: right;; width: 550%;"/>
-</div>
-        <div class="d-block">        
-                     
-        <article class="comentarios-clase float-end " style="background-color: #5F6BB3; padding-left: 2%; padding: 1%;width: 55%; margin-top: 0.5%;">
+            <img src="img/buscar.png" class="position-absolute" style="margin-left: 53%; width: 4%; margin-top: 0%; "
+                alt="Informacion acerca de la clase" />
+            <article class="descripcion-clase" style="background-color: #5F6BB3; width: 54%;">
+                <h4 style="font-size: 1vw; color: white; padding: 2%;">
+                    En esta video lección, Florencia Gomez aborda el tema: ¿Qué haremos
+                    durante el curso?, que forma parte de nuestro curso: Creación de
+                    cámara estenopeica. Contruí tu cámara con madera y aprendé a tomar
+                    imágenes únicas
+                </h4>
+            </article>
 
-            <textarea style="width: 90%; border-radius: 10px;" name="" id="comentarioIngresado" cols="70" rows="4"
-                placeholder="Dejanos tu comentario"></textarea>
-            <input type="submit" value="Enviar" class="boton-enviar" style="background-color: #EDEC87; border-radius: 37px; text-align: center; padding: 1%;"/>
-            <span id="mensajesDeError"></span>
-        </article>
-    </div>
+        </div>
+        <div class="col-xs-6 d-inline-flex flex-row-reverse"
+            style="text-align: center; padding-left: 78%; padding-top: 0.5%; ">
+            <h3 style="font-size: 1.5vw;"><strong>Dejanos tu comentario</strong></h3>
+        </div>
+        <div class="col-xs-6 d-inline-flex flex-row-reverse position-absolute"
+            style="padding-left: 20px; margin-left: 5%; margin-bottom: 2%;"> <img src="img/charla.png"
+                alt="icono de charla" style="position:absolute; padding-left: 80%;text-align: right;; width: 550%;" />
+        </div>
+        <div class="d-block">
+
+            <article class="comentarios-clase float-end "
+                style="background-color: #5F6BB3; padding-left: 2%; padding: 1%;width: 55%; margin-top: 0.5%;">
+
+                <textarea style="width: 90%; border-radius: 10px;" name="" id="comentarioIngresado" cols="70" rows="4"
+                    placeholder="Dejanos tu comentario"></textarea>
+                <input type="submit" value="Enviar" class="boton-enviar"
+                    style="background-color: #EDEC87; border-radius: 37px; text-align: center; padding: 1%;" />
+                <span id="mensajesDeError"></span>
+            </article>
+        </div>
     </main>
 
     <footer>
