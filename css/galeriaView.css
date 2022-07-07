@@ -1,0 +1,30 @@
+#galeria img{
+     width: 100%;
+     height: auto;
+   padding: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   }
+
+  .contenedortotal{
+   margin: 45px;
+ }
+
+.col-8{
+ padding-right:0px;
+
+}
+.col-4{
+  padding-left:0px;
+ 
+ }
+ #tou{
+  padding: 0px;
+
+}
+#row3{
+  padding-left: 12px;
+padding-right: 12px;
+}
+
+
