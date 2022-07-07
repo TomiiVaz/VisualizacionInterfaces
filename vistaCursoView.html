@@ -131,15 +131,14 @@
 
         <div class="col-md-12 d-flex" class="calificacion d-inline-flex justify-content-around"
             style="padding-left: 5%; padding-bottom: 2%;">
-            <a href="#"> <img src="img/me-gusta.png" style="width: 90%;" alt="Me gusta" /></a>
-            <a href="#"><img src="img/disgusto.png" style="width: 90%;" alt="No me gusta" /></a>
-            <h3 class="d-inline-flex" style="margin-left: 4%; font-size: 1.6vw; align-items: center;">Califica esta
+            <a href="#" style="width: 5%;"> <img src="img/me-gusta.png" style="width: 90%;" alt="Me gusta" /></a>
+            <a href="#" style="width: 5%;"><img src="img/disgusto.png" style="width: 90%;" alt="No me gusta" /></a>
+            <h3 class="d-inline-flex" style="font-size: 1.4vw; align-items: center;">Califica esta
                 clase</h3>
-            <a href="vistaCursoView.html"
-                style="background-color: #EDEC87; padding-top: 30px; border-radius: 37px; text-decoration: none; color: black; margin-left: 55%; width: 10%; text-align: center; align-items: center; font-size: 2vh;">Siguiente</a>
+            <button class="btn border-0 ms-7 me-1" style="background-color: #EDEC87; border-radius: 37px; margin-left: 55%; font-size: 1vw;">Siguiente clase</button>
         </div>
 
-        <div class="position:relative">
+        <div class="position:relative d-block">
 
             <img src="img/buscar.png" class="position-absolute" style="margin-left: 53%; width: 4%; margin-top: 0%; "
                 alt="Informacion acerca de la clase" />
@@ -153,19 +152,15 @@
             </article>
 
         </div>
-        <div class="col-xs-6 d-inline-flex flex-row-reverse"
-            style="text-align: center; padding-left: 78%; padding-top: 0.5%; ">
-            <h3 style="font-size: 1.5vw;"><strong>Dejanos tu comentario</strong></h3>
-        </div>
-        <div class="col-xs-6 d-inline-flex flex-row-reverse position-absolute"
-            style="padding-left: 20px; margin-left: 5%; margin-bottom: 2%;"> <img src="img/charla.png"
-                alt="icono de charla" style="position:absolute; padding-left: 80%;text-align: right;; width: 550%;" />
-        </div>
-        <div class="d-block">
 
-            <article class="comentarios-clase float-end "
-                style="background-color: #5F6BB3; padding-left: 2%; padding: 1%;width: 55%; margin-top: 0.5%;">
+        <div class="d-block text-center" style="margin-left: 45%;">
 
+                   <div class="d-inline-flex position-relative pb-5" style="width: 15%;">
+            <h3 style="font-size: 1.5vw; width: 100%; margin-left: 100%;" class="position-absolute"><strong>Dejanos tu comentario</strong></h3>
+            <img src="img/charla.png" alt="icono de charla" class="position-absolute" style="width: 70%; margin-left: 300%;"/>
+        </div>
+
+            <article class="comentarios-clase" style="background-color: #5F6BB3; padding: 1%; margin-top: 0.5%;">
                 <textarea style="width: 90%; border-radius: 10px;" name="" id="comentarioIngresado" cols="70" rows="4"
                     placeholder="Dejanos tu comentario"></textarea>
                 <input type="submit" value="Enviar" class="boton-enviar"
