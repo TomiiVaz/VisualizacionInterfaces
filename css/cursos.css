@@ -12,5 +12,31 @@
       margin-top: 15px;
   }
 
+   h4 {
+   font-family: 'Nunito';
+   font-family: sans-serif;
+    }
 
+    h1{
+      font-family: 'Roboto Slab';
+      font-family: serif;
+      font-weight: 500;
+       }
+
+       h2{
+        font-family: 'Roboto Slab';
+        font-family: serif;
+         }
     
+    #cont1{
+      padding-top: 150px;
+       }
+       #cont2{
+        padding-top: 186px;
+         }
+         #cont3{
+          padding-top: 150px;
+           }
+           #cont4{
+            padding-top: 150px;
+             }
