@@ -74,3 +74,31 @@ $("#validarContraseña2").keyup(function (e) {
     $("#validarContraseña2").addClass("is-valid");
   }
 });
+
+//////////////////////
+function validarCampo() {
+  var error=false;
+  var mensajeError="";
+  var mensajeAMostrar=document.getElementById("mensajesDeError");
+  var comentarioIngresado=document.getElementById("comentarioIngresado");
+
+
+if(comentarioIngresado.value.length>1000){
+  error=true;
+  mensajeError+="Usted alcanzó el límite de caracteres en su comentario"+"<br>";
+}
+
+if(comentarioIngresado.value.length<5){
+  error=true;
+  mensajeError+="Debe escribir más de 5 caracteres"+"<br>";
+}
+
+if(error){
+  mensajeAMostrar.innerHTML=mensajeError;
+  return false;
+}
+else{
+  mensajeAMostrar.innerHTML="Sus datos fueron enviados correctamente";
+  return true;
+}
+}
