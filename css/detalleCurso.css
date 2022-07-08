@@ -1,4 +1,7 @@
 /* General */
+h2{
+    text-size-adjust: 1.25rem;
+}
 /**********/
 
 /* Titulas principal */
@@ -9,19 +12,95 @@
 
 /* Imagen e items del curso */
 #img-camaras{
-    padding-inline: 8%;
+    padding-inline: 10%;
     margin-bottom: 2%;
-    margin-left: 4%;
 }
 #camaras{
-    width: 110%;
+    width: 60%;
 }
 .contenedor-items-curso{
-    padding: 2%;
+    padding: 1%;
 }
 .icono-curso{
-    width: 5%;
+    width: 3%;
     float: left;
+    margin-right: 2%;
 }
 /**********/
 
+/* Parrafo introductorio */
+#intro-curso{
+    background-color: #5f6bb3; 
+    width: 40%;
+    min-height: 70%;
+}
+.intro-curso-parrafo{
+    line-height: 175%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+#into-curso-btn{
+    float: right;
+}
+#precio{
+    width: fit-content;
+    float: left;
+}
+#btn-intro-1{
+    background-color: #efec83;
+    border: none;
+    border-radius: 50px;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+}
+#btn-intro-2{
+    border-radius: 50px;
+    border-color: #efec83;
+    border-width: medium;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+    color: white;
+}
+/*********/
+
+/* Menu acordion de contenido del curso */
+.accordion-button, .accordion-body{
+    padding-left: 20%;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+/*********/
+
+/*Foto demostrativa 2*/
+#img-2{
+    right: 25%;
+    width: 75%;
+    z-index: 2;
+}
+#img-sombra{
+    width: 75%;
+    top: 5%;
+    right: 22%;
+    z-index: 1;
+}
+/*********/
+
+/* Comentarios */
+#img-clasificacion{
+    width: 8%;
+}
+.slider-header{
+    float: left;
+}
+.carousel-item{
+    background-color: #7d88c0;
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+}
+.nombre-fecha{
+    font-style: italic;
+}
+/*********/
