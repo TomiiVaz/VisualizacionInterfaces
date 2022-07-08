@@ -21,12 +21,12 @@
         <div class="text-end me-4 pt-4">
             <button class="btn border-0 me-1 text-white" data-bs-toggle="modal"
                 data-bs-target="#ModalLogin" style="font-family: 'Nunito', sans-serif;">Ingresar</button>
-            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87; font-family: 'Nunito', sans-serif;" data-bs-toggle="modal"
-                data-bs-target="#ModalRegistrarse">Registrarse</button>
+            <button class="btn border-0 ms-1 me-1" style="background-color: #EDEC87;font-family: 'Nunito', sans-serif;" data-bs-toggle="modal"
+                data-bs-target="#ModalRegistrarse" >Registrarse</button>
             <img src="img/carrito-de-compras.png" alt="" width="40px" class="ms-1">
         </div>
         <div class="container pb-1">
-            <div class="nav d-flex justify-content-center" style="font-size: 1.5vw;font-family: 'Nunito', sans-serif;">
+            <div class="nav d-flex justify-content-center" style="font-size: 1.2em;font-family: 'Nunito', sans-serif;">
                 <div class="row align-items-end">
                     <a href="cursosView.html">Cursos</a>
                 </div>
@@ -51,7 +51,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="background-color: #ADAFFE">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Ingresa a tu cuenta!
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;font-family: 'Roboto Slab', serif;">¡Ingresa a tu cuenta!
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -59,7 +59,7 @@
                         <div class="modal-body text-center">
                             <input type="text" class="form-control" id="validarUsuario" placeholder="Usuario" required>
                             <input type="text" class="form-control mt-3" id="validarClave" placeholder="Clave" required>
-                            <a href="#" class="text-white mt-2">¿Olvidaste tu contraseña?</a>
+                            <a href="#" class="text-white mt-2" style="font-family: 'Nunito', sans-serif;">¿Olvidaste tu contraseña?</a>
                             <div class="valid-feedback">
                                 Correcto!
                             </div>
@@ -85,7 +85,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="background-color: #ADAFFE">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3;">¡Registrate y comenza a
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: #5f6bb3; font-family: 'Roboto Slab', serif;">¡Registrate y comenza a
                             aprender!
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -103,7 +103,7 @@
                             <input type="password" class="form-control mt-3" id="validarContraseña2"
                                 placeholder="Contraseña2" required>
                             <button type="submit" class="btn border-0 m-auto d-block mt-3"
-                                style="background-color: #EDEC87;">Registrarse</button>
+                                style="background-color: #EDEC87; font-family: 'Nunito', sans-serif;">Registrarse</button>
                             <div class="mt-4">
                                 <a href="#" class="me-2"> <img src="img/facebookinicio.png" alt="" width="20px"></a>
                                 <a href="#" class="ms-2"> <img src="img/google-mas.png" alt="" width="40px"></a>
@@ -118,50 +118,50 @@
     </header>
     <!------------------------------------------------------------------------------------------------>
     <main>
-        <div class="row">
-            <article id="art-img-1" class="col">
-                <img src="img/Can-you-use-a-photo-commercially-if-you-credit-the-photographer_518_6068348_0_14111049_1000.jpg"
-                    class="img_fluid" alt="Imagen Promocional 1" id="img-prom-1">
+        <div class="row position-relative mt-4">
+            <article id="art-img-1" class="col ms-5" style="padding-left: 15%;">
+                <img src="img/Curso-estenopeica4-copia.jpg" class="img_fluid" alt="Imagen Promocional 1" id="img-prom-1">
             </article>
-            <article id="art-bienvenidos" class="col text-white">
+            <article id="art-bienvenidos" class="col text-white position-absolute py-4 px-5">
                 <h1 style="font-family: 'Roboto Slab', serif;"><strong>Bienvenido a Peapic</strong></h1>
                 <h4 id="bienvenidos-parrafo" style="font-family: 'Nunito', sans-serif;">Somos la empresa más innovadora en cursos de fotografía y cine estenopeicos
                     gracias a nuestra amplia experiencia profesional.</h4>
-                <a class="btn btn2 btn-warning" href="#" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Registrate</strong></a>
+                <a class="btn btn2 btn-warning mt-2" href="#" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Registrate</strong></a>
             </article>
         </div>
-        <div class="row" id="row-2">
+        <div class="row my-3" id="row-2">
             <article class="col" id="texto-prom-seminario">
                 <h1 id="h1-seminario" style="font-family: 'Nunito', sans-serif;"><strong>MIRÁ NUESTRO ÚLTIMO SEMINARIO GRATUITO SOBRE CÁMARAS ESTENOPEICAS</strong>
                 </h1>
-                <a class="btn btn2 btn-warning" href="#" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Mirar ahora</strong></a>
+                <a class="btn btn2 btn-warning mt-2" href="#" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Mirar ahora</strong></a>
             </article>
-            <article class="col" id="art-img-2">
-                <img src="img/estrella.png" class="img_fluid position-absolute" alt="estrella detalle" id="estrella">
+            <article class="col position-relative" id="art-img-2">
+                <img src="img/estrella.png" class="img_fluid position-absolute top-0" alt="estrella detalle" id="estrella">
                 <img src="img/7637014494_c6c01f6006_z.jpg" alt="Imagen Promocional 2" id="img-prom-2">
             </article>
         </div>
         <div class="row text-center" id="texto-desarrollo-curso">
-            <h2 style="font-family: 'Roboto Slab', serif;"><strong>A lo largo de nuestros cursos desarrollarás</strong></h2>
+            <h3 style="font-family: 'Roboto Slab', serif;"><strong>A lo largo de nuestros cursos desarrollarás</strong></h3>
         </div>
-        <div class="row text-white text-center" id="cont-items-desarrollo-curso" style="font-family: 'Nunito', sans-serif;">
+        <div class="row text-white text-center mb-2" id="cont-items-desarrollo-curso" style="font-family: 'Nunito', sans-serif;">
             <article class="col text-center">
                 <img src="img/burbuja-de-dialogo.png" alt="comunicacion" class="item-des-curso">
-                <h4>Nuevos recursos para comunicar</h4>
+                <h4 class="mt-2">Nuevos recursos para comunicar</h4>
             </article>
             <article class="col text-center">
                 <img src="img/creatividad.png" alt="creatividad" class="item-des-curso">
-                <h4>Creatividad e imaginación</h4>
+                <h4 class="mt-2">Creatividad e imaginación</h4>
             </article>
             <article class="col text-center">
                 <img src="img/bombilla.png" alt="vision" class="item-des-curso">
-                <h4>Visión y curiosidad</h4>
+                <h4 class="mt-2">Visión y curiosidad</h4>
             </article>
         </div>
         <div class="row" id="btn-adquirir-curso">
-            <a class="btn btn2 btn-warning" href="cursosView.html" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Adquirí tu curso</strong></a>
+            <a class="btn btn2 btn-warning mt-2" href="cursosView.html" role="button" style="font-family: 'Nunito', sans-serif;"><strong>Adquirí tu curso</strong></a>
         </div>
     </main>
+ 
     <footer>
         <div class="footer" class="img-fluid bg-image d-flex"
             style="background-image: url('img/footer.jpg'); margin-top: 13%; min-height: 30vh;">
@@ -170,7 +170,7 @@
                         alt="Peapic Cursos" class="imgfluid flex-row position-absolute start-50"
                         style="width: 15%; padding-top: 8%; margin-left: 32%;" /></a>
                 <div class="direccion" class="d-inline-flex" style="padding-top: 5%; color: white;">
-                    <h5 style="text-align: center; font-size: 1.2vw;">Av. Santa Fe y Salguero, CABA <br>
+                    <h5 style="text-align: center; font-size: 1em; font-family: 'Nunito', sans-serif;">Av. Santa Fe y Salguero, CABA <br>
                         contacto@peapic.com</h5>
                 </div>
                 <div class="logos" class="position-relative d-inline-flex justify-content-center" style="padding-left: 43%; padding-top: 1.5%; width: 10%;">
@@ -184,7 +184,7 @@
             </div>
         </div>
     </footer>
-
+    
 </body>
 
 </html>
