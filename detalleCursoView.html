@@ -121,7 +121,7 @@
       <h4>Dictado por Florencia Gomez</h4>
     </div>
     <div class="row">
-      <article class="col" id="img-camaras">
+      <article class="col position-relative" id="img-camaras">
         <img src="img/unnamed.jpg" alt="camaras" id="camaras">
         <div class="contenedor-items-curso">
           <img src="img/knowledge.png" class="icono-curso" alt="conocimiento">
@@ -139,30 +139,29 @@
           <img src="img/certificado.png" class="icono-curso" alt="certificado">
           <h5 class="item-curso"style="font-family: 'Nunito', sans-serif;">Certificado</h5>
         </div>
-      </article>
-      <article class="col">
-        <h6 style="font-family: 'Nunito', sans-serif;">
-          En este curso entenderás los fundamentos de cada material al realizar un tipo de cámara estenopeica.
-          Gracias a nuestro taller de carpintería contamos con una amplia variedad de tipos de madera y materiales
-          específicos para la creacion de una cámara de la mayor calidad posible.
-        </h6>
-        <br>
-        <h6 style="font-family: 'Nunito', sans-serif;">
-          En este nivel, con el apoyo de la profesora Florencia Gomez, podrás personalizar tu propia cámara con
-          el objetivo de urilizarla en próximos cursos.
-        </h6>
-        <h1 style="font-family: 'Nunito', sans-serif;">$5.000 ARS</h1>
-        <a class="btn btn-warning" href="#" role="button" style="font-family: 'Nunito', sans-serif;">Comprar</a>
-        <button class="btn btn-outline-warning" style="font-family: 'Nunito', sans-serif;">Añadir al carrito</button>
+        <div class="text-white position-absolute top-0 start-50 mt-5 py-5 px-5" id="intro-curso">
+          <h5 class="intro-curso-parrafo" style="font-family: 'Nunito', sans-serif;">
+            En este curso, con el apoyo de la profesora Florencia Gomez, aprenderás a construir y personalizar tu propia cámara estenopeica desde cero.
+          </h5>
+          <h5 class="intro-curso-parrafo" style="font-family: 'Nunito', sans-serif;">
+            Gracias a nuestro taller de carpintería contamos con una amplia variedad de tipos de madera y materiales
+            específicos para la creación de una cámara de la mayor calidad posible.
+          </h5>
+          <h1 class="mt-4 pt-3 px-2" id="precio" style="font-family: 'Nunito', sans-serif;"><strong>$5.000 ARS</strong></h1>
+          <div class="d-grid gap-2" id="into-curso-btn">
+            <a class="btn btn-warning" href="#" role="button" id="btn-intro-1" style="font-family: 'Nunito', sans-serif;"><strong>Comprar</strong></a>
+            <button class="btn btn-outline-warning" id="btn-intro-2" style="font-family: 'Nunito', sans-serif;"><strong>Añadir al carrito</strong></button>
+          </div>
+        </div>
       </article>
     </div>
     <div class="row">
       <article class="col">
-        <h4 style="font-family: 'Roboto Slab', serif;">Contenidos del curso</h4>
+        <h4 class="ms-5" style="padding-inline: 12%;" style="font-family: 'Roboto Slab', serif;"><strong>Contenidos del curso</strong></h4>
         <div class="accordion">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne" style="font-family: 'Nunito', sans-serif;"> 
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            <h2 class="accordion-header border-bottom border-primary border-2" id="headingOne" style="font-family: 'Nunito', sans-serif;">
+              <button class="accordion-button btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
                 Introducción
               </button>
@@ -170,14 +169,14 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body" style="font-family: 'Nunito', sans-serif;">
-                <h6>¿Quién dicta este curso?</h6>
-                <h6>Influencias</h6>
-                <h6>¿Qupe haremos durante el curso?</h6>
+                <h5>¿Quién dicta este curso?</h5>
+                <h5>Influencias</h5>
+                <h5>¿Qué haremos durante el curso?</h5>
               </div>
             </div>
           </div>
           <div class="accordion-item" style="font-family: 'Nunito', sans-serif;">
-            <h2 class="accordion-header" id="headingTwo">
+            <h2 class="accordion-header border-bottom border-primary border-2" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Qué necesitamos saber
@@ -186,13 +185,13 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body" style="font-family: 'Nunito', sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
-                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.</h5>
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree" style="font-family: 'Nunito', sans-serif;">
+            <h2 class="accordion-header border-bottom border-primary border-2" id="headingThree" style="font-family: 'Nunito', sans-serif;">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Construimos la cámara
@@ -201,13 +200,13 @@
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body" style="font-family: 'Nunito', sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
-                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.</h5>
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour" style="font-family: 'Nunito', sans-serif;">
+            <h2 class="accordion-header border-bottom border-primary border-2" id="headingFour" style="font-family: 'Nunito', sans-serif;">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Proyecto final
@@ -216,39 +215,37 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
               data-bs-parent="#accordionExample">
               <div class="accordion-body" style="font-family: 'Nunito', sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
-                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nobis. Sequi adipisci soluta quibusdam
+                quod, quas ipsa vel corporis ducimus commodi non, unde quae modi! Fugiat commodi minus quas facere.</h5>
               </div>
             </div>
           </div>
         </div>
       </article>
-      <article class="col">
-        <img src="img/pexels-yura-forrat-8642037.jpg" class="img-fluid" alt="img-2">
-        <div id="sombra-img"></div>
+      <article class="col position-relative mt-5 ms-5">
+        <img src="img/pexels-yura-forrat-8642037.jpg" class="position-absolute " alt="img-2" id="img-2">
+        <img src="img/pexels-yura-forrat-8642037-fondo-sombra.jpg" class="position-absolute " alt="img-sombra" id="img-sombra">
       </article>
     </div>
     <div class="row">
-      <article>
-        <img src="img/clasificacion.png" alt="clasificacion">
-        <h2 style="font-family: 'Roboto Slab', serif;">Reseñas de alumnos graduados</h2>
+      <article class="mt-5 mx-5 ps-5">
+        <img class="slider-header mt-4" src="img/clasificacion.png" alt="clasificacion" id="img-clasificacion">
+        <h4 class="w-50 mt-5 mx-4 mb-4 slider-header" style="font-family: 'Roboto Slab', serif;"><strong>Reseñas de alumnos graduados</strong></h4>
       </article>
-      <div id="carouselComentarios" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselComentarios" class="carousel slide" data-bs-ride="carousel" data-interval="false">
         <div class="carousel-inner">
-          <div class="carousel-item active" style="font-family: 'Nunito', sans-serif;">
-            <h5>Carlos Perez, 22/01/2021</h5>
-            <p>
-              Soy principiante en el arte de la fotografía estenopeica y este curso me da muchas herramientas
-              para ello además de dar un giro completo a cómo obtener fotografías creando tu propia cámara.
+          <div class="carousel-item me-5 p-4 active" style="font-family: 'Nunito', sans-serif;">
+            <h5 class="nombre-fecha ms-5 ps-5">Carlos Perez, 22/01/2021</h5>
+            <p class="mx-5 px-5">
+              Soy principiante en el arte de la fotografóa estenopeica y este curso me da muchas herramientas
+              para ello además de dar un giro completo a cómo obtener fortografías creando tu propia cámara.
               Lo super recomiendo!
             </p>
           </div>
-          <div class="carousel-item">
-            <h5>Sofía Lopez, 15/06/2020</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, deserunt aspernatur?
-              Maxime veritatis voluptatem dicta qui aliquam magnam fugit doloremque eveniet minus debitis eius,
-              error quasi ad aut vel minima!
+          <div class="carousel-item me-5 p-4" style="font-family: 'Nunito', sans-serif;">
+            <h5 class="nombre-fecha ms-5 ps-5">Sofía Lopez, 15/06/2020</h5>
+            <p class="mx-5 px-5">
+              Un curso super interesante, muy bien explicado de forma sencilla y fácil de entender, 10/10.
             </p>
           </div>
         </div>
