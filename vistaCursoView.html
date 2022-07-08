@@ -144,7 +144,7 @@
             <img src="img/buscar.png" class="position-absolute" style="margin-left: 53%; width: 4%; margin-top: 0%; "
                 alt="Informacion acerca de la clase" />
             <article class="descripcion-clase" style="background-color: #5F6BB3; width: 54%;">
-                <h4 style="font-size: 1vw; color: white; padding: 2%;">
+                <h4 style="font-size: 1.2vw; color: white; padding: 2%;">
                     En esta video lección, Florencia Gomez aborda el tema: ¿Qué haremos
                     durante el curso?, que forma parte de nuestro curso: Creación de
                     cámara estenopeica. Contruí tu cámara con madera y aprendé a tomar
@@ -160,14 +160,15 @@
             <h3  style="font-size: 1.5vw ;width: 200%; margin-left: 100%; font-family: 'Roboto Slab', serif;" class="d-inline-flex position-absolute"><strong style="padding-top: 6%;">Dejanos tu comentario</strong></h3>
             <img src="img/charla.png" alt="icono de charla" class="position-absolute" style="width: 70%; margin-left: 300%;"/>
         </div>
+        <form action="" class="formulario" id="fomularioContacto" onsubmit="return validarCampo()">
 
             <article class="comentarios-clase" style="background-color: #5F6BB3; padding: 1%; margin-top: 0.5%;">
                 <textarea style="width: 90%; border-radius: 10px;" name="" id="comentarioIngresado" cols="70" rows="4"
                     placeholder="Contanos tu experiencia"></textarea>
-                <input type="submit" value="Enviar" class="boton-enviar"
-                    style="background-color: #EDEC87; border-radius: 37px; text-align: center; padding: 1%;" />
+                <input type="submit" value="Enviar" class="boton-enviar" style="background-color: #EDEC87; border-radius: 37px; text-align: center; padding: 1%;" />
                 <span id="mensajesDeError"></span>
             </article>
+            </form>
         </div>
     </main>
 
