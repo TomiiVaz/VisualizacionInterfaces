@@ -4,9 +4,16 @@ h2{
 }
 /**********/
 
-/* Titulas principal */
+/* Titular principal */
 #titular{
     margin-bottom: 2%;
+}
+#FlorGomez-link{
+    color: black;
+    text-decoration: none;
+}
+#FlorGomez-link:hover{
+    color: #5f6bb3;
 }
 /**********/
 
@@ -25,6 +32,9 @@ h2{
     width: 3%;
     float: left;
     margin-right: 2%;
+}
+.item-curso{
+    margin-top: 1%;
 }
 /**********/
 
@@ -54,6 +64,9 @@ h2{
     height: 40px;
     margin-top: 15px;
 }
+#btn-intro-1:hover{
+    background-color: #ffc107;
+}
 #btn-intro-2{
     border-radius: 50px;
     border-color: #efec83;
@@ -62,6 +75,11 @@ h2{
     height: 40px;
     margin-top: 15px;
     color: white;
+}
+#btn-intro-2:hover{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
 }
 /*********/
 
@@ -89,7 +107,7 @@ h2{
 
 /* Comentarios */
 #img-clasificacion{
-    width: 8%;
+    width: 10%;
 }
 .slider-header{
     float: left;
