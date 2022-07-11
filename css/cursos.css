@@ -18,9 +18,11 @@
     }
 
     h1{
+      padding-top:25px ;
+     
       font-family: 'Roboto Slab';
       font-family: serif;
-      font-weight: 500;
+      font-weight: 300;
        }
 
        h2{
