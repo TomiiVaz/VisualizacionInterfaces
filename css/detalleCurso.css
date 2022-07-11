@@ -62,24 +62,10 @@ h2{
     border-radius: 50px;
     width: 180px;
     height: 40px;
-    margin-top: 15px;
+    margin-top: 15%;
 }
 #btn-intro-1:hover{
     background-color: #ffc107;
-}
-#btn-intro-2{
-    border-radius: 50px;
-    border-color: #efec83;
-    border-width: medium;
-    width: 180px;
-    height: 40px;
-    margin-top: 15px;
-    color: white;
-}
-#btn-intro-2:hover{
-    background-color: #ffc107;
-    border-color: #ffc107;
-    color: black;
 }
 /*********/
 
