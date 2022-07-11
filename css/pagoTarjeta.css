@@ -50,7 +50,7 @@ body {
 
 .tarjeta .delantera {
   width: 100%;
-  background: url(../img/bg-tarjeta-03.jpg);
+  background: url(../img/bg-tarjeta-03-copia.jpg);
   background-size: cover;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .delantera .grupo .label {
   font-size: 16px;
-  color: #7d8994;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
@@ -94,7 +94,7 @@ body {
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
-  background: url(../img/bg-tarjeta-03.jpg);
+  background: url(../img/bg-tarjeta-03-trasera.jpg);
   background-size: cover;
   position: absolute;
   top: 0;
